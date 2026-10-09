@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GharGo · Launching soon in Guwahati</title>
+<meta name="description" content="GharGo helps you find PGs, rooms and flats in Guwahati and plan all your visits in a single day. Launching soon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FFF8F1;
+    --ink: #1F2937;
+    --muted: #6B7280;
+    --brand: #0F766E;      /* teal: temporary brand colour */
+    --brand-dark: #115E59;
+    --accent: #F59E0B;     /* saffron: temporary accent */
+    --whatsapp: #16A34A;
+    --whatsapp-dark: #15803D;
+    --card: #FFFFFF;
+    --line: #F1E7DC;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+
+  header { padding: 22px 0; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .logo { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.5px; color: var(--brand); text-decoration: none; }
+  .logo span { color: var(--accent); }
+  .soon {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #FEF3C7; color: #92400E;
+    font-size: 0.82rem; font-weight: 600;
+    padding: 6px 14px; border-radius: 999px; white-space: nowrap;
+  }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); animation: pulse 1.6s infinite; }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+  .hero { padding: 30px 0 48px; text-align: center; }
+  .where { color: var(--brand); font-weight: 600; font-size: 0.95rem; margin-bottom: 14px; }
+  h1 { font-size: clamp(2rem, 6vw, 3.3rem); line-height: 1.15; font-weight: 800; letter-spacing: -1px; }
+  h1 em { font-style: normal; color: var(--brand); }
+  .sub { font-size: 1.08rem; color: var(--muted); max-width: 580px; margin: 18px auto 30px; }
+
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .btn {
+    display: inline-block; text-decoration: none; font-weight: 600;
+    padding: 13px 24px; border-radius: 12px; font-size: 0.98rem;
+  }
+  .btn-primary { background: var(--brand); color: #fff; }
+  .btn-primary:hover { background: var(--brand-dark); }
+  .btn-ghost { background: transparent; color: var(--brand); border: 2px solid var(--brand); }
+
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; padding-bottom: 40px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 24px; }
+  .icon { font-size: 1.8rem; margin-bottom: 10px; }
+  .card h3 { font-size: 1.08rem; margin-bottom: 6px; }
+  .card p { color: var(--muted); font-size: 0.95rem; }
+
+  .owners {
+    background: var(--card); border: 2px dashed #BBF7D0; border-radius: 22px;
+    padding: 30px 26px; margin-bottom: 24px; text-align: center;
+  }
+  .owners h2 { font-size: 1.35rem; margin-bottom: 6px; }
+  .owners p { color: var(--muted); max-width: 520px; margin: 0 auto 18px; }
+  .btn-wa { background: var(--whatsapp); color: #fff; }
+  .btn-wa:hover { background: var(--whatsapp-dark); }
+
+  .founder {
+    background: var(--brand); color: #fff; border-radius: 22px;
+    padding: 32px 28px; margin-bottom: 48px;
+    display: flex; gap: 22px; align-items: center; flex-wrap: wrap;
+  }
+  .avatar {
+    width: 72px; height: 72px; flex-shrink: 0; border-radius: 50%;
+    background: var(--accent); color: var(--ink);
+    display: grid; place-items: center; font-size: 1.8rem; font-weight: 800;
+  }
+  .founder-text { flex: 1; min-width: 220px; }
+  .founder small { text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.75rem; opacity: 0.8; }
+  .founder h2 { font-size: 1.35rem; margin: 2px 0 8px; }
+  .founder p { opacity: 0.92; font-size: 0.97rem; }
+
+  footer { border-top: 1px solid var(--line); padding: 22px 0 30px; text-align: center; color: var(--muted); font-size: 0.88rem; }
+  footer a { color: var(--brand); text-decoration: none; }
+</style>
+</head>
+<body>
+  <header class="wrap">
+    <a class="logo" href="/">Ghar<span>Go</span></a>
+    <div class="soon"><span class="dot"></span> Launching soon</div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="where">📍 Starting in Guwahati, Assam</p>
+      <h1>Find your next home in Guwahati,<br><em>without the running around.</em></h1>
+      <p class="sub">PGs, rooms, 1BHKs and 2BHKs. Shortlist the places you like, and GharGo fixes a visit time with every owner so you can see them all in a single day. No more broker hassle.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://instagram.com/ghargo_in" target="_blank" rel="noopener">Follow us for launch updates</a>
+        <a class="btn btn-ghost" href="#owners">Own a PG? List for free</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="card">
+        <div class="icon">🗓️</div>
+        <h3>All your visits in one day</h3>
+        <p>Shortlist 5–8 places. We take a time slot from each owner and build your visit plan for the day.</p>
+      </div>
+      <div class="card">
+        <div class="icon">✅</div>
+        <h3>Physically verified</h3>
+        <p>Only places our team has visited in person get the Verified badge. No fake photos.</p>
+      </div>
+      <div class="card">
+        <div class="icon">💬</div>
+        <h3>Easy for owners</h3>
+        <p>Visit requests arrive straight on WhatsApp. No app or laptop needed.</p>
+      </div>
+    </section>
+
+    <section class="owners" id="owners">
+      <h2>Own a PG or have a room to rent?</h2>
+      <p>Get your place listed on GharGo for free before launch. Send us a message on WhatsApp and we'll take it from there.</p>
+      <a class="btn btn-wa" href="https://wa.me/918876374290?text=Hi%20GharGo%2C%20I%20own%20a%20PG%2Froom%20in%20Guwahati%20and%20would%20like%20to%20list%20it."
+         target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+    </section>
+
+    <section class="founder">
+      <div class="avatar">K</div>
+      <div class="founder-text">
+        <small>Who's building this</small>
+        <h2>Kamrul, a student from Assam</h2>
+        <p>I've seen how exhausting it is to find a good room in a new city: endless visits, brokers, and listings that turn out to be fake or outdated. GharGo is my answer to that, built from scratch, one line of code at a time.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    © 2026 GharGo · Guwahati, Assam ·
+    <a href="https://wa.me/918876374290" target="_blank" rel="noopener">WhatsApp</a> ·
+    <a href="mailto:ghargo.app@gmail.com">ghargo.app@gmail.com</a> ·
+    <a href="https://instagram.com/ghargo_in" target="_blank" rel="noopener">@ghargo_in</a>
+  </footer>
+</body>
+</html>
