@@ -2,188 +2,337 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GharGo · Launching soon in Guwahati</title>
-<meta name="description" content="GharGo helps you find PGs, rooms and flats in Guwahati and plan all your visits in a single day. Launching soon.">
-<meta name="theme-color" content="#0F766E">
-
-<!-- Icons -->
-<link rel="icon" href="favicon.ico" sizes="any">
-<link rel="icon" type="image/svg+xml" href="ghargo-icon.svg">
-<link rel="apple-touch-icon" href="apple-touch-icon-180.png">
-
-<!-- Link preview (WhatsApp / Instagram / Facebook) -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GharGo: Find your PG in Guwahati · Launching soon</title>
+<meta name="description" content="GharGo is launching soon in Guwahati. Verified PGs, rooms and flats near your college. Shortlist, plan up to 8 visits in one day, and book every visit for free.">
+<meta name="theme-color" content="#063341">
+<link rel="canonical" href="https://ghargo.in/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/ghargo-icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon-180.png">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="GharGo">
+<meta property="og:title" content="GharGo: Find your PG in Guwahati">
+<meta property="og:description" content="Launching soon. Verified PGs, rooms and flats. Book visits for free.">
 <meta property="og:url" content="https://ghargo.in/">
-<meta property="og:title" content="GharGo · Launching soon in Guwahati">
-<meta property="og:description" content="Find PGs, rooms and flats in Guwahati and see them all in a single day. No broker hassle.">
 <meta property="og:image" content="https://ghargo.in/ghargo-share.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="GharGo — find your next home in Guwahati">
-<meta property="og:site_name" content="GharGo">
+<meta property="og:image:alt" content="GharGo: Find your PG in Guwahati. Launching soon.">
 <meta name="twitter:card" content="summary_large_image">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Hind:wght@400;500;600&display=swap">
 <style>
-  :root {
-    --bg: #FFF8F1;
-    --ink: #1F2937;
-    --muted: #6B7280;
-    --brand: #0F766E;      /* teal */
-    --brand-dark: #115E59;
-    --accent: #F59E0B;     /* saffron */
-    --whatsapp: #16A34A;
-    --whatsapp-dark: #15803D;
-    --card: #FFFFFF;
-    --line: #F1E7DC;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
-    background: var(--bg);
-    color: var(--ink);
-    line-height: 1.6;
-  }
-  .wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+/* GharGo coming soon page (ghargo.in on GitHub Pages). Batch 8. Navy + orange like the app. */
+:root{
+  --nv:#063341; --nv2:#0F4B60; --or:#FA6020; --btn:#CC4A0E; --btnh:#B5410C;
+  --tx:#0B2530; --mu:#5B7078; --bg:#F3F6F7; --sf:#FFFFFF; --ln:rgba(6,51,65,.09);
+  --ok:#0D7552; --oksoft:#DCF2E8; --orsoft:#FFE7DC; --orfg:#B9400C; --tag:#E3EDF0;
+  --hmu:#C9DAE0; --f-d:"Poppins","Segoe UI",system-ui,sans-serif; --f-b:"Hind","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 var(--f-b);-webkit-text-size-adjust:100%}
+img{max-width:100%;display:block}
+a{color:var(--nv)}a:hover{color:var(--btn)}
+h1,h2,h3{font-family:var(--f-d);margin:0;text-wrap:balance}
+:focus-visible{outline:2px solid var(--or);outline-offset:3px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;color:var(--nv);padding:8px 14px;border-radius:10px;z-index:10}
+.skip:focus{left:8px}
+svg.i{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
 
-  header { padding: 22px 0; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-  .logo { display: inline-flex; align-items: center; text-decoration: none; }
-  .logo svg { height: 44px; width: auto; display: block; }
-  @media (max-width: 420px) { .logo svg { height: 34px; } }
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:14px;background:var(--btn);color:#fff;text-decoration:none;font:600 16px var(--f-d);border:0;cursor:pointer;touch-action:manipulation;transition:transform .15s ease,background-color .15s ease}
+.btn:hover{background:var(--btnh);color:#fff;transform:translateY(-1px)}
+.btn:active{transform:scale(.97)}
+.btn.lt{background:#fff;color:var(--nv)}.btn.lt:hover{background:#EEF3F5;color:var(--nv)}
+.btn.ol{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.4)}.btn.ol:hover{background:rgba(255,255,255,.08)}
 
-  .soon {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: #FEF3C7; color: #92400E;
-    font-size: 0.82rem; font-weight: 600;
-    padding: 6px 14px; border-radius: 999px; white-space: nowrap;
-  }
-  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); animation: pulse 1.6s infinite; }
-  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+/* header + hero */
+.top{background:var(--nv);color:#fff;overflow:hidden}
+.nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px}
+.brand{display:inline-flex;min-height:44px;align-items:center}
+.brand img{height:44px;width:auto}
+.links{display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;font:500 15px var(--f-d)}
+.links a{color:#D5E3E8;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.links a:hover{color:#fff}
+.links .btn{color:#fff}
+.hero{display:flex;flex-wrap:wrap;align-items:center;gap:48px;padding-top:40px;padding-bottom:96px}
+.hero .txt{flex:1 1 460px;min-width:0}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 20px}
+.pill{display:inline-flex;align-items:center;gap:8px;margin:0;padding:6px 14px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);font:500 14px var(--f-d);color:#FFD2BD}
+.pill svg.i{width:16px;height:16px}
+.pill.soon{background:var(--or);border-color:var(--or);color:#fff;font-weight:600}
+.dot{position:relative;width:8px;height:8px;border-radius:50%;background:#fff}
+.dot::after{content:"";position:absolute;inset:0;border-radius:50%;background:#fff;animation:ping 1.8s ease-out infinite}
+@keyframes ping{0%{transform:scale(1);opacity:.8}100%{transform:scale(2.6);opacity:0}}
+.hero h1{font-size:clamp(40px,5.4vw,66px);line-height:1.08;letter-spacing:-1.2px;font-weight:700}
+.hero h1 span{color:var(--or)}
+.lead{margin:22px 0 0;max-width:520px;font-size:19px;color:var(--hmu)}
+.lead b{color:#fff;font-weight:600}
+.cta{margin-top:32px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.cta .btn{min-height:56px;padding:0 26px;font-size:17px}
+.ticks{list-style:none;margin:28px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px 26px;font:500 15px var(--f-d);color:#E4EEF1}
+.ticks li{display:flex;align-items:center;gap:8px}
+.ticks svg.i{width:18px;height:18px;color:#5FD3A4;stroke-width:2.4}
 
-  .hero { padding: 30px 0 48px; text-align: center; }
-  .where { color: var(--brand); font-weight: 600; font-size: 0.95rem; margin-bottom: 14px; }
-  h1 { font-size: clamp(2rem, 6vw, 3.3rem); line-height: 1.15; font-weight: 800; letter-spacing: -1px; }
-  h1 em { font-style: normal; color: var(--brand); }
-  .sub { font-size: 1.08rem; color: var(--muted); max-width: 580px; margin: 18px auto 30px; }
+/* 3D city (CSS only, no library) */
+.city{flex:1 1 440px;min-width:0;position:relative;height:520px}
+.glow{position:absolute;left:50%;top:50%;width:460px;height:460px;margin:-230px 0 0 -230px;border-radius:50%;background:radial-gradient(circle at 50% 45%,rgba(250,96,32,.22),rgba(6,51,65,0) 65%)}
+.stage{position:absolute;left:50%;top:52%;width:0;height:0;perspective:1400px}
+.ground{position:absolute;left:-210px;top:-210px;width:420px;height:420px;transform-style:preserve-3d;transform:rotateX(58deg) rotateZ(-40deg);animation:turn 40s linear infinite}
+@keyframes turn{0%,100%{transform:rotateX(58deg) rotateZ(-40deg)}50%{transform:rotateX(58deg) rotateZ(-28deg)}}
+.ground>.tile{position:absolute;inset:0;border-radius:34px;background:var(--nv2);box-shadow:0 0 0 10px rgba(255,255,255,.05)}
+.road{position:absolute;background:#2A6276}
+.road.h{left:0;right:0;top:296px;height:26px}
+.road.v{top:0;bottom:0;left:118px;width:22px}
+.lane{position:absolute;left:0;right:0;top:307px;height:3px;background:repeating-linear-gradient(90deg,#8FB3C0 0 14px,transparent 14px 28px)}
+.tree{position:absolute;border-radius:50%;background:#2F8F6A}
+.tree.t1{left:330px;top:336px;width:46px;height:46px}
+.tree.t2{left:30px;top:36px;width:56px;height:56px}
+.tree.t3{left:60px;top:70px;width:34px;height:34px;background:#3BA57C}
+.bld{position:absolute;transform-style:preserve-3d}
+.bld .fr,.bld .sd,.bld .rf{position:absolute}
+.bld .fr{left:0;transform-origin:bottom center;transform:rotateX(-90deg)}
+.bld .sd{left:0;top:0;transform-origin:left center;transform:rotateY(-90deg)}
+.win{border-radius:4px;background:#FFB58F}
+.b1{left:170px;top:150px;width:130px;height:110px}
+.b1 .fr{top:15px;width:130px;height:95px;background:#F4F8F9;display:flex;justify-content:space-around;align-items:center;padding:0 10px}
+.b1 .fr .win{width:24px;height:30px}
+.b1 .fr .door{width:26px;height:46px;margin-top:30px;border-radius:4px 4px 0 0;background:var(--nv)}
+.b1 .sd{width:95px;height:110px;background:#C3D4DA;display:flex;flex-direction:column;justify-content:space-around;align-items:center}
+.b1 .sd .win{width:28px;height:22px;background:#F2A27E}
+.b1 .rf{left:-7px;top:-7px;width:144px;height:124px;transform:translateZ(95px);background:var(--or);border-radius:6px}
+.pinpost{position:absolute;left:34px;top:26px;width:0;height:0;transform-style:preserve-3d;transform:translateZ(95px) rotateZ(40deg)}
+.pinup{position:absolute;left:-36px;top:-96px;width:72px;height:96px;transform-origin:bottom center;transform:rotateX(-90deg)}
+.pinup img{width:72px;height:94px;animation:bob 2.6s ease-in-out infinite;filter:drop-shadow(0 6px 6px rgba(0,0,0,.25))}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.b2{left:30px;top:214px;width:72px;height:66px}
+.b2 .fr{top:10px;width:72px;height:56px;background:#DCE7EB;display:flex;gap:10px;justify-content:center;align-items:center}
+.b2 .fr .win{width:16px;height:16px;border-radius:3px}
+.b2 .sd{width:56px;height:66px;background:#A9C0C8}
+.b2 .rf{left:0;top:0;width:72px;height:66px;transform:translateZ(56px);background:#fff}
+.b3{left:300px;top:40px;width:70px;height:64px}
+.b3 .fr{top:-82px;width:70px;height:146px;background:#1F6680;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:14px 10px}
+.b3 .fr i{border-radius:2px;background:#7FA9B8}.b3 .fr i:nth-child(odd){background:#FFB58F}
+.b3 .sd{width:146px;height:64px;background:#154F63}
+.b3 .rf{left:0;top:0;width:70px;height:64px;transform:translateZ(146px);background:#2C7A96}
+.float{position:absolute;display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:18px;background:#fff;color:var(--tx);box-shadow:0 20px 40px -18px rgba(0,0,0,.5);animation:fl 5s ease-in-out infinite}
+.float.f2{animation-duration:6s;animation-delay:-2s}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.float .ic{display:grid;place-items:center;width:40px;height:40px;border-radius:12px}
+.float b{display:block;font:600 15px var(--f-d);line-height:1.25}
+.float span span{font-size:13px;color:var(--mu)}
+.fa{right:0;bottom:96px}.fa .ic{background:var(--oksoft);color:var(--ok)}
+.fb{right:0;top:96px}.fb .ic{background:var(--orsoft);color:var(--orfg)}
+.fc{left:10%;bottom:40px}.fc .ic{background:var(--tag);color:var(--nv)}.fc .g{color:var(--ok);font-weight:600}
 
-  .cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
-  .btn {
-    display: inline-block; text-decoration: none; font-weight: 600;
-    padding: 13px 24px; border-radius: 12px; font-size: 0.98rem;
-  }
-  .btn-primary { background: var(--brand); color: #fff; }
-  .btn-primary:hover { background: var(--brand-dark); }
-  .btn-ghost { background: transparent; color: var(--brand); border: 2px solid var(--brand); }
+/* sections */
+.sec{padding-top:88px;padding-bottom:24px}
+.eyebrow{margin:0;font:600 14px var(--f-d);letter-spacing:1.4px;text-transform:uppercase;color:var(--btn)}
+.sec h2{margin-top:10px;max-width:720px;font-size:clamp(30px,3.4vw,42px);line-height:1.18;letter-spacing:-.6px;color:var(--nv)}
+.cards{margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{padding:28px;border-radius:24px;background:var(--sf);border:1px solid var(--ln);transition:transform .25s ease,box-shadow .25s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -18px rgba(6,51,65,.35)}
+.card .ic{display:grid;place-items:center;width:54px;height:54px;border-radius:16px}
+.card .ic svg.i{width:28px;height:28px}
+.card h3{margin:20px 0 8px;font-size:21px;font-weight:600;color:var(--nv)}
+.card p{margin:0;color:var(--mu)}
+.ic.o{background:var(--orsoft);color:var(--orfg)}.ic.g{background:var(--oksoft);color:var(--ok)}.ic.n{background:var(--tag);color:var(--nv)}
+.how{padding:48px clamp(20px,4vw,56px);border-radius:32px;background:var(--sf);border:1px solid var(--ln)}
+.how h2{margin-top:10px;font-size:clamp(28px,3vw,38px);line-height:1.2;color:var(--nv)}
+.steps{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px}
+.steps li{display:flex;flex-direction:column;gap:10px}
+.steps .n{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--nv);color:#fff;font:700 18px var(--f-d)}
+.steps li:last-child .n{background:var(--btn)}
+.steps b{font:600 18px var(--f-d);color:var(--nv)}
+.steps span:last-child{color:var(--mu)}
+.note{margin:36px 0 0;display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center;padding:18px 20px;border-radius:18px;background:var(--orsoft)}
+.note p{margin:0;flex:1 1 280px;color:var(--tx);font-weight:500}
+.owners{background:var(--nv);color:#fff;margin-top:64px}
+.owners .wrap{display:flex;flex-wrap:wrap;gap:48px;align-items:center;padding-top:88px;padding-bottom:88px}
+.owners .l{flex:1 1 440px;min-width:0}
+.owners .eyebrow{color:#FFB58F}
+.owners h2{color:#fff;margin-top:10px;font-size:clamp(30px,3.4vw,42px);line-height:1.18}
+.owners p{margin:18px 0 0;max-width:520px;font-size:18px;color:var(--hmu)}
+.owners .acts{margin-top:32px;display:flex;flex-wrap:wrap;gap:14px}
+.owners .num{margin-top:14px;font-size:15px;color:var(--hmu)}
+.owners .num b{color:#fff;font-weight:600;letter-spacing:.3px}
+.olist{flex:1 1 380px;min-width:0;list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.olist li{display:flex;gap:14px;align-items:flex-start;padding:18px 20px;border-radius:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1)}
+.olist svg.i{width:24px;height:24px;color:var(--or);margin-top:2px}
+.olist b{font:600 17px var(--f-d)}
+.olist span span{color:var(--hmu)}
+.story{display:flex;flex-wrap:wrap;gap:28px;align-items:center;padding:36px clamp(20px,4vw,48px);border-radius:28px;background:var(--sf);border:1px solid var(--ln)}
+.story .mk{flex:none;display:grid;place-items:center;width:84px;height:84px;border-radius:24px;background:#EEF3F5}
+.story .mk img{width:56px;height:auto}
+.story div{flex:1 1 420px;min-width:0}
+.story h2{margin:0;font-size:24px;font-weight:600;max-width:none}
+.story p{margin:8px 0 0;color:var(--mu)}
+.sec.last{padding-bottom:88px}
 
-  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; padding-bottom: 40px; }
-  .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 24px; }
-  .icon { font-size: 1.8rem; margin-bottom: 10px; }
-  .card h3 { font-size: 1.08rem; margin-bottom: 6px; }
-  .card p { color: var(--muted); font-size: 0.95rem; }
+/* footer */
+footer{border-top:1px solid rgba(6,51,65,.1);background:#fff}
+.foot{display:flex;flex-wrap:wrap;gap:24px 48px;justify-content:space-between;align-items:flex-start;padding-top:40px;padding-bottom:20px}
+.foot img{height:36px;width:auto}
+.foot p{margin:8px 0 0;color:var(--mu)}
+.foot nav{display:flex;flex-wrap:wrap;gap:4px 28px;font:500 15px var(--f-d)}
+.foot nav a{min-height:44px;display:inline-flex;align-items:center;overflow-wrap:anywhere}
+.copy{margin:0 auto;padding-bottom:28px;font-size:14px;color:var(--mu)}
 
-  .owners {
-    background: var(--card); border: 2px dashed #BBF7D0; border-radius: 22px;
-    padding: 30px 26px; margin-bottom: 24px; text-align: center;
-  }
-  .owners h2 { font-size: 1.35rem; margin-bottom: 6px; }
-  .owners p { color: var(--muted); max-width: 520px; margin: 0 auto 18px; }
-  .btn-wa { background: var(--whatsapp); color: #fff; }
-  .btn-wa:hover { background: var(--whatsapp-dark); }
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ground,.pinup img,.float,.dot::after{animation:none}.card,.btn{transition:none}}
 
-  .founder {
-    background: var(--brand); color: #fff; border-radius: 22px;
-    padding: 32px 28px; margin-bottom: 48px;
-    display: flex; gap: 22px; align-items: center; flex-wrap: wrap;
-  }
-  .avatar {
-    width: 72px; height: 72px; flex-shrink: 0; border-radius: 50%;
-    background: var(--accent); color: var(--ink);
-    display: grid; place-items: center; font-size: 1.8rem; font-weight: 800;
-  }
-  .founder-text { flex: 1; min-width: 220px; }
-  .founder small { text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.75rem; opacity: 0.8; }
-  .founder h2 { font-size: 1.35rem; margin: 2px 0 8px; }
-  .founder p { opacity: 0.92; font-size: 0.97rem; }
-
-  footer { border-top: 1px solid var(--line); padding: 22px 0 30px; text-align: center; color: var(--muted); font-size: 0.88rem; }
-  footer a { color: var(--brand); text-decoration: none; }
+/* phones */
+@media (max-width:640px){
+  .wrap{padding:0 16px}
+  .nav{flex-wrap:nowrap}
+  .brand img{height:38px}
+  .links{gap:4px 16px;font-size:14px;flex-wrap:nowrap}
+  .links .hide-sm{display:none}
+  .links .btn{min-height:44px;padding:0 16px;font-size:14px}
+  .hero{padding-top:16px;padding-bottom:56px;gap:24px}
+  .lead{font-size:17px}
+  .cta .btn{width:100%}
+  .city{height:380px;flex-basis:100%}
+  .stage{transform:scale(.64)}
+  .fa{right:0;bottom:84px}.fb{display:none}.fc{left:4%;bottom:8px}
+  .float{padding:10px 12px}
+  .sec{padding-top:56px}
+  .owners .wrap{padding-top:56px;padding-bottom:56px}
+  .owners .acts .btn{width:100%}
+}
 </style>
 </head>
 <body>
-  <header class="wrap">
-    <a class="logo" href="/" aria-label="GharGo home">
-      <svg viewBox="290 470 1470 395" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GharGo">
-        <path fill="#063341" d="M 466.048 497.288 C 470.332 496.96 474.643 496.642 478.942 496.767 C 490.894 497.116 503.753 500.533 514.068 506.665 C 532.794 517.799 554.683 543.412 570.792 559.332 C 585.223 573.593 600.401 587.376 614.203 602.235 C 622.537 611.208 630.425 621.346 634.03 633.209 C 639.264 650.432 638.388 739.084 637.445 761.349 C 636.551 782.467 628.224 801.673 612.451 815.932 C 588.871 837.249 562.088 836.023 532.565 835.956 C 519.537 835.926 506.399 836.201 493.39 835.503 C 507.293 818.158 520.264 801.729 531.299 782.367 C 548.003 782.787 570.583 785.903 581.959 771.008 C 584.776 767.287 586.644 762.937 587.404 758.333 C 588.079 754.1 588.002 747.721 587.931 743.319 C 587.459 713.846 588.963 684.067 587.095 654.675 C 586.507 645.412 582.006 640.101 575.642 633.828 C 554.995 613.477 534.209 593.192 513.82 572.576 C 506.821 565.538 499.262 557.219 491.356 551.313 C 484.302 547.935 471.544 544.545 464.675 550.187 C 435.735 573.954 410.59 602.355 383.567 628.236 C 369.382 641.821 365.965 645.666 365.857 665.486 L 365.846 728.84 C 365.946 778.747 367.478 783.599 418.485 783.037 C 430.654 800.699 443.061 819.568 456.889 835.862 C 422.692 835.166 376.465 841.432 348.815 821.978 C 332.261 810.118 321.019 792.238 317.503 772.179 C 314.562 754.966 314.513 662.8 317.283 645.404 C 319.137 633.763 322.556 623.614 329.4 614.006 C 342.766 595.242 363.188 578.633 379.634 562.378 C 394.904 547.284 420.837 518.53 437.475 507.496 C 446.177 501.725 455.864 499.009 466.048 497.288 z"/>
-        <path fill="#063341" d="M 787.563 572.335 C 817.643 568.621 844.611 579.482 867.837 597.798 C 882.061 609.015 883.929 624.555 872.433 638.638 C 866.919 646.657 851.636 649.876 843.556 643.626 C 816.561 622.743 785.501 611.584 758.176 643.248 C 749.111 653.86 744.663 667.654 745.819 681.562 C 746.942 695.718 753.733 707.926 764.624 716.94 C 776.479 726.599 791.682 731.16 806.896 729.62 C 818.3 728.38 827.832 720.714 834.86 712.096 C 824.147 712.248 808.789 714.159 800.59 706.039 C 791.819 697.351 792.104 681.475 801.197 673.129 C 810.588 664.51 827.538 666.765 839.361 667.073 C 857.427 666.793 888.923 662.274 892.179 686.712 C 898.329 732.869 858.463 773.794 814.8 780.538 C 786.379 784.64 757.486 777.382 734.377 760.338 C 712.388 743.987 697.905 719.474 694.192 692.325 C 685.402 630.809 727.219 580.499 787.563 572.335 z"/>
-        <path fill="#FA6020" d="M 1461.23 571.339 C 1462.98 571.105 1464.74 570.921 1466.5 570.787 C 1494.3 568.737 1516.18 578.877 1538.62 596.437 C 1557.97 611.583 1557.04 640.109 1531.02 646.788 C 1518.39 650.03 1506.24 634.461 1496.15 629.356 C 1488.37 625.42 1477.73 623.109 1468.48 623.551 C 1454.29 624.337 1440.97 630.652 1431.38 641.143 C 1421.93 651.805 1417.11 665.791 1417.99 680.012 C 1419.62 709.751 1447.6 731.213 1476.39 729.782 C 1489.52 729.13 1498.78 720.696 1506.81 711.318 C 1506.31 711.35 1505.81 711.378 1505.31 711.403 C 1494.1 711.956 1481.73 713.072 1472.83 704.735 C 1468.72 700.903 1466.38 695.542 1466.36 689.923 C 1466.3 683.931 1468.7 678.177 1473.01 674.012 C 1482.4 664.863 1498.79 666.922 1511.5 667.035 C 1532.66 666.94 1557.73 662.815 1562.47 689.892 C 1570.46 735.422 1528.82 773.347 1487.07 780.23 C 1459.92 784.847 1432.06 778.248 1409.86 761.943 C 1330.66 704.524 1360.75 585.845 1461.23 571.339 z"/>
-        <path fill="#063341" d="M 467.343 604.244 C 493.325 600.972 516.402 608.584 534.608 627.598 C 549.9 643.322 558.127 664.596 557.392 686.517 C 556.443 720.01 527.77 758.783 508.207 784.327 C 502.387 791.926 491.97 805.392 485.491 811.584 C 483.684 812.7 481.931 813.558 479.863 814.095 C 476.449 814.981 473.567 814.67 470.574 812.733 C 450.79 799.931 403.38 719.871 398.802 694.763 C 395.263 675.354 401.125 654.185 412.295 638.177 C 425.848 618.754 444.414 608.385 467.343 604.244 z"/>
-        <path fill="#FFFFFF" d="M 474.34 649.58 C 492.047 647.586 508.072 660.187 510.31 677.865 C 512.548 695.543 500.17 711.74 482.525 714.222 C 470.892 715.858 459.278 711.106 452.13 701.783 C 444.982 692.46 443.406 680.012 448.005 669.202 C 452.604 658.392 462.666 650.895 474.34 649.58 z"/>
-        <path fill="#FA6020" d="M 473.553 665.603 C 479.463 664.064 485.74 665.894 489.896 670.368 C 494.051 674.843 495.414 681.237 493.444 687.017 C 491.474 692.797 486.488 697.028 480.465 698.032 C 471.71 699.491 463.356 693.803 461.506 685.122 C 459.655 676.44 464.964 667.84 473.553 665.603 z"/>
-        <path fill="#063341" d="M 1133.72 627.243 C 1151.64 625.566 1164.09 627.854 1178.65 638.225 C 1180.29 636.483 1182.06 634.87 1183.95 633.401 C 1199.68 621.006 1228.82 628.164 1228.24 645.817 C 1227.19 678.124 1232.74 731.403 1227.87 761.941 C 1226.83 768.383 1223.22 774.125 1217.86 777.845 C 1204.5 787.082 1187.61 781.907 1178.78 768.888 C 1171.08 775.721 1163.89 779.281 1153.6 781.137 C 1135.95 784.298 1117.77 780.356 1103.01 770.17 C 1086.01 758.05 1074.55 739.641 1071.19 719.034 C 1063.57 674.623 1088.52 634.991 1133.72 627.243 z"/>
-        <path fill="#FFFFFF" d="M 1144.46 677.875 C 1159.07 675.138 1173.13 684.744 1175.9 699.348 C 1178.67 713.952 1169.1 728.042 1154.5 730.843 C 1139.86 733.653 1125.71 724.041 1122.94 709.392 C 1120.16 694.743 1129.8 680.621 1144.46 677.875 z"/>
-        <path fill="#063341" d="M 935.999 570.244 C 973.462 567.651 965.763 610.561 965.794 635.324 C 991.272 622.744 1013.55 625.145 1034.96 645.135 C 1045.24 654.071 1057.24 675.885 1055 690.56 C 1051.18 715.558 1068.14 780.119 1029.24 781.386 C 994.104 782.53 1001.53 740.46 1001.86 717.25 C 1002.21 700.816 1004.2 672.243 978.542 678.123 C 951.733 684.267 974.481 751.551 961.115 770.354 C 948.602 787.958 916.337 783.489 912.331 763.324 C 910.156 752.374 911.237 732.143 911.247 720.514 C 911.081 694.774 911.188 669.034 911.567 643.296 C 911.785 625.774 911.191 607.942 912.221 590.451 C 912.994 577.309 924.567 572.166 935.999 570.244 z"/>
-        <path fill="#FA6020" d="M 1647.03 627.469 C 1689.38 623.974 1726.6 655.321 1730.35 697.641 C 1734.11 739.96 1703 777.375 1660.7 781.395 C 1618.03 785.451 1580.21 754.002 1576.42 711.309 C 1572.63 668.615 1604.32 630.995 1647.03 627.469 z"/>
-        <path fill="#FFFFFF" d="M 1651.16 677.29 C 1665.92 675.588 1679.33 686.022 1681.3 700.75 C 1683.27 715.477 1673.08 729.071 1658.4 731.311 C 1648.65 732.798 1638.86 728.908 1632.8 721.138 C 1626.74 713.368 1625.34 702.93 1629.15 693.839 C 1632.95 684.747 1641.37 678.42 1651.16 677.29 z"/>
-        <path fill="#063341" d="M 1274.84 625.311 C 1288.08 625.851 1292.51 630.576 1300.91 639.659 C 1318.47 623.131 1352.22 619.994 1352.47 651.619 C 1351.7 680.71 1321.16 669.475 1308.09 681.441 C 1298.08 690.6 1301.81 730.514 1301.94 743.75 C 1302.02 753.062 1302.5 762.376 1296.92 770.278 C 1284.76 787.5 1251.61 783.981 1248.67 761.104 C 1247.35 750.793 1247.45 740.096 1247.5 729.786 C 1247.62 703.147 1246.5 676.394 1247.94 649.816 C 1248.86 633.238 1259.76 627.238 1274.84 625.311 z"/>
-      </svg>
-    </a>
-    <div class="soon"><span class="dot"></span> Launching soon</div>
-  </header>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap nav">
+    <a class="brand" href="/" aria-label="GharGo home"><img src="/logo-white.svg" alt="GharGo" width="174" height="44"></a>
+    <nav class="links" aria-label="Main">
+      <a class="hide-sm" href="#how">How it works</a>
+      <a class="hide-sm" href="#owners">For PG owners</a>
+      <a class="btn" href="https://www.instagram.com/ghargo_in" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>Follow us</a>
+    </nav>
+  </div>
 
-  <main class="wrap">
-    <section class="hero">
-      <p class="where">📍 Starting in Guwahati, Assam</p>
-      <h1>Find your next home in Guwahati,<br><em>without the running around.</em></h1>
-      <p class="sub">PGs, rooms, 1BHKs and 2BHKs. Shortlist the places you like, and GharGo fixes a visit time with every owner so you can see them all in a single day. No more broker hassle.</p>
+  <div class="wrap hero">
+    <div class="txt">
+      <div class="tags">
+        <p class="pill soon"><span class="dot" aria-hidden="true"></span>Launching soon</p>
+        <p class="pill"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Starting in Guwahati, Assam</p>
+      </div>
+      <h1>Find your PG in Guwahati. <span>Easy.</span></h1>
+      <p class="lead">Verified PGs, rooms and flats near your college. Shortlist, plan up to 8 visits in one day, and book every visit for free. <b>The GharGo app is coming very soon.</b></p>
+
       <div class="cta">
-        <a class="btn btn-primary" href="https://instagram.com/ghargo_in" target="_blank" rel="noopener">Follow us for launch updates</a>
-        <a class="btn btn-ghost" href="#owners">Own a PG? List for free</a>
+        <a class="btn" href="https://www.instagram.com/ghargo_in" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>Follow on Instagram</a>
+        <a class="btn ol" href="#owners">Own a PG? List it free</a>
       </div>
-    </section>
 
-    <section class="features">
-      <div class="card">
-        <div class="icon">🗓️</div>
-        <h3>All your visits in one day</h3>
-        <p>Shortlist 5–8 places. We take a time slot from each owner and build your visit plan for the day.</p>
-      </div>
-      <div class="card">
-        <div class="icon">✅</div>
-        <h3>Physically verified</h3>
-        <p>Only places our team has visited in person get the Verified badge. No fake photos.</p>
-      </div>
-      <div class="card">
-        <div class="icon">💬</div>
-        <h3>Easy for owners</h3>
-        <p>Visit requests arrive straight on WhatsApp. No app or laptop needed.</p>
-      </div>
-    </section>
+      <ul class="ticks">
+        <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>Physically verified PGs</li>
+        <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>Visit booking is free</li>
+        <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>Log in with just your phone</li>
+      </ul>
+    </div>
 
-    <section class="owners" id="owners">
-      <h2>Own a PG or have a room to rent?</h2>
-      <p>Get your place listed on GharGo for free before launch. Send us a message on WhatsApp and we'll take it from there.</p>
-      <a class="btn btn-wa" href="https://wa.me/918876374290?text=Hi%20GharGo%2C%20I%20own%20a%20PG%2Froom%20in%20Guwahati%20and%20would%20like%20to%20list%20it."
-         target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
-    </section>
+    <div class="city" aria-hidden="true">
+      <div class="glow"></div>
+      <div class="stage"><div class="ground">
+        <div class="tile"></div><div class="road h"></div><div class="road v"></div><div class="lane"></div>
+        <div class="tree t1"></div><div class="tree t2"></div><div class="tree t3"></div>
+        <div class="bld b1">
+          <div class="fr"><span class="win"></span><span class="door"></span><span class="win"></span></div>
+          <div class="sd"><span class="win"></span><span class="win"></span></div>
+          <div class="rf"></div>
+          <div class="pinpost"><div class="pinup"><img src="/pin.svg" alt="" width="72" height="94"></div></div>
+        </div>
+        <div class="bld b2"><div class="fr"><span class="win"></span><span class="win"></span></div><div class="sd"></div><div class="rf"></div></div>
+        <div class="bld b3"><div class="fr"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="sd"></div><div class="rf"></div></div>
+      </div></div>
+      <div class="float fa"><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.5 3 8.4 7 10 4-1.6 7-5.5 7-10V6z"/><path d="m9 12 2 2 4-4"/></svg></span><span><b>Physically verified</b><span>GharGo team visited</span></span></div>
+      <div class="float f2 fb"><span class="ic"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><span><b>Up to 8 visits in a day</b><span>Your Visit Plan</span></span></div>
+      <div class="float fc"><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M3 18V8m0 6h18v4M21 14v-2a3 3 0 0 0-3-3h-7v5"/><circle cx="7" cy="11" r="2"/></svg></span><span><b>Rent per bed</b><span class="g">Free beds shown</span></span></div>
+    </div>
+  </div>
+</header>
 
-    <section class="founder">
-      <div class="avatar">K</div>
-      <div class="founder-text">
-        <small>Who's building this</small>
-        <h2>Kamrul, a student from Assam</h2>
-        <p>I've seen how exhausting it is to find a good room in a new city: endless visits, brokers, and listings that turn out to be fake or outdated. GharGo is my answer to that, built from scratch, one line of code at a time.</p>
+<main id="main">
+  <section class="wrap sec" id="plan">
+    <p class="eyebrow">Why GharGo</p>
+    <h2>No more walking around for days to see a few PGs</h2>
+    <div class="cards">
+      <article class="card"><span class="ic o"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="19" r="2"/><circle cx="18" cy="5" r="2"/><path d="M8 19h8.5a3.5 3.5 0 0 0 0-7h-9a3.5 3.5 0 0 1 0-7H16"/></svg></span>
+        <h3>Visit Plan: 8 PGs in one day</h3><p>Shortlist up to 8 places for one day. Each owner confirms a time, and your day is planned for you.</p></article>
+      <article class="card"><span class="ic g"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3 8.4 7 10 4-1.6 7-5.5 7-10V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <h3>Verified by our own team</h3><p>The Verified badge goes only to PGs our team has visited in person: rooms, photos and the owner checked.</p></article>
+      <article class="card"><span class="ic n"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
+        <h3>Free visits, private details</h3><p>Booking a visit costs nothing. Your phone number stays private, and the exact address comes once the owner confirms.</p></article>
+    </div>
+  </section>
+
+  <section class="wrap sec" id="how">
+    <div class="how">
+      <p class="eyebrow">How it will work</p>
+      <h2>From search to your new room in 4 steps</h2>
+      <ol class="steps">
+        <li><span class="n">1</span><b>Pick area and budget</b><span>Jalukbari to start, more areas soon. Filter by PG, room, 1BHK or 2BHK.</span></li>
+        <li><span class="n">2</span><b>Shortlist what you like</b><span>See rooms, free beds, rent per bed and photos. Tap the heart to save.</span></li>
+        <li><span class="n">3</span><b>Book visits for free</b><span>Pick a day. The owner confirms a time and you get it on WhatsApp.</span></li>
+        <li><span class="n">4</span><b>Visit and move in</b><span>See the places in person, pick the one you like, and settle in.</span></li>
+      </ol>
+      <div class="note">
+        <p>The app opens for students in Guwahati soon. Follow us to know the day it goes live.</p>
+        <a class="btn" href="https://www.instagram.com/ghargo_in" target="_blank" rel="noopener">Follow on Instagram<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer class="wrap">
-    © 2026 GharGo · Guwahati, Assam ·
-    <a href="https://wa.me/918876374290" target="_blank" rel="noopener">WhatsApp</a> ·
-    <a href="mailto:ghargo.app@gmail.com">ghargo.app@gmail.com</a> ·
-    <a href="https://instagram.com/ghargo_in" target="_blank" rel="noopener">@ghargo_in</a>
-  </footer>
+  <section class="owners" id="owners">
+    <div class="wrap">
+      <div class="l">
+        <p class="eyebrow">For PG owners</p>
+        <h2>Own a PG in Guwahati? List it free.</h2>
+        <p>Talk to GharGo on WhatsApp. We add your PG, our team visits and verifies it, and students start asking to visit.</p>
+        <div class="acts">
+          <a class="btn lt" href="https://wa.me/918876374290?text=Hi%20GharGo%2C%20I%20own%20a%20PG%20in%20Guwahati%20and%20want%20to%20list%20it." target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" style="color:#0D7552"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1.1-4A8 8 0 1 1 20 12z"/></svg>Talk to GharGo on WhatsApp</a>
+        </div>
+        <p class="num">WhatsApp: <b>+91 88763 74290</b></p>
+      </div>
+      <ul class="olist">
+        <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span><b>Free listing at launch</b><br><span>Rooms, beds and rent per bed, all on one page.</span></span></li>
+        <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1.1-4A8 8 0 1 1 20 12z"/></svg><span><b>Visit requests on WhatsApp</b><br><span>Confirm a time in the app or on WhatsApp.</span></span></li>
+        <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3 8.4 7 10 4-1.6 7-5.5 7-10V6z"/></svg><span><b>Verified badge after our visit</b><br><span>Students trust PGs our team has seen.</span></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="wrap sec last">
+    <div class="story">
+      <span class="mk"><img src="/ghargo-icon.svg" alt="" width="56" height="58"></span>
+      <div>
+        <h2>Made by a student who lived this problem</h2>
+        <p>Kamrul, a student from Assam, studies at Pragjyotish College and lives in a PG himself. He struggled to find one, saw his friends and juniors go through the same, and started GharGo.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><img src="/logo-navy.svg" alt="GharGo" width="143" height="36"><p>Find PGs, rooms and flats in Guwahati.</p></div>
+    <nav aria-label="Footer">
+      <a href="#how">How it works</a>
+      <a href="#owners">For PG owners</a>
+      <a href="/terms">Terms</a>
+      <a href="/privacy">Privacy</a>
+      <a href="https://www.instagram.com/ghargo_in" target="_blank" rel="noopener">Instagram</a>
+      <a href="mailto:ghargo.app@gmail.com">ghargo.app@gmail.com</a>
+    </nav>
+  </div>
+  <p class="wrap copy">© 2026 GharGo · Guwahati, Assam</p>
+</footer>
 </body>
 </html>
